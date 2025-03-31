@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { Box, Typography, Switch, Container, Grid, Button, Paper } from "@mui/material";
 import Footer from "./Footer.js";
+import Navbar from "./Navbar";
 export default function MainPricing() {
   const [checked, setChecked] = useState(false);
   const inputEl = useRef(null);
@@ -11,6 +12,7 @@ export default function MainPricing() {
 
   return (
     <>
+    <Navbar/>
     <Box sx={{ backgroundColor: "hsl(240, 78%, 98%)", minHeight: "100vh", position: "relative" }}>
       {/* Background Images */}
       <Container

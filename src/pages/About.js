@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import { LinkedIn, ArrowForward, Timeline, Diversity3, Lightbulb } from "@mui/icons-material";
 import { motion } from "framer-motion";
-
+import Navbar from "./../components/Navbar.js";
 // Sample images (replace with actual ones)
 import founder1 from "../media/image1.jpeg";
 import founder2 from "../media/image1.jpeg";
@@ -77,6 +77,8 @@ const AboutUs = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   
   return (
+    <>
+    <Navbar/>
     <Box sx={{ 
     //   backgroundImage: `url(${bgPattern})`,
       backgroundRepeat: "repeat",
@@ -550,6 +552,7 @@ const AboutUs = () => {
         </Box>
       </Container>
     </Box>
+    </>
   );
 };
 
